@@ -9,12 +9,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         LinearLayout llMain = (LinearLayout) findViewById(R.id.linearLayoutMain);
+
+        EditText etNama = new EditText(this);
+        llMain.addView(etNama);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText etNama = new EditText(this);
-        llMain.addView(etNama);
+
     }
 }
